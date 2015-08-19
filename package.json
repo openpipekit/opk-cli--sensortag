@@ -1,0 +1,29 @@
+{
+  "name": "opk-cli--sensortag-ambient-temperature",
+  "version": "1.0.0",
+  "description": "Pull CLI for getting the ambient temperature from the TI SensorTag.",
+  "main": "pull",
+  "dependencies": {
+    "async": "^1.4.2",
+    "sensortag": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "pull"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/openpipekit/opk-cli--sensortag-ambient-temperature.git"
+  },
+  "keywords": [
+    "open-pipe-kit",
+    "sensor",
+    "iot"
+  ],
+  "author": "R.J. Steinert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/openpipekit/opk-cli--sensortag-ambient-temperature/issues"
+  },
+  "homepage": "https://github.com/openpipekit/opk-cli--sensortag-ambient-temperature#readme"
+}
