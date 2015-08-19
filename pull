@@ -13,7 +13,7 @@ SensorTag.discover(function(sensorTag) {
   //console.log('discovered: ' + sensorTag);
 
   sensorTag.on('disconnect', function() {
-    console.log('disconnected!');
+    //console.log('disconnected!');
     process.exit(0);
   });
 
@@ -58,7 +58,8 @@ SensorTag.discover(function(sensorTag) {
         }
       },
       function(callback) {
-        process.exit()
+        //console.log('disconnect');
+        sensorTag.disconnect(callback);
       }
   ])
 })
