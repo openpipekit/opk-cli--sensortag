@@ -20,6 +20,15 @@ var data = {}
 var program = parseArgv(process.argv)
 log(program)
 
+if (program.help) {
+  console.log('usage:')
+  console.log('./pull --allSensors')
+  console.log('./pull --ambientTemperature')
+  console.log('./pull --humidity --gyroscope --ambientTemperature')
+  process.exit(1)
+}
+
+
 var USE_READ = true;
 
 SensorTag.discover(function(sensorTag) {
