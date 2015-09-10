@@ -8,11 +8,8 @@ var log = function(message, tokens) {
 }
 
 var _ = require('underscore')
-
 var util = require('util');
-
 var async = require('async');
-
 var SensorTag = require('sensortag');
 
 var data = {}
@@ -22,12 +19,13 @@ log(program)
 
 if (program.help) {
   console.log('usage:')
-  console.log('./pull --allSensors')
-  console.log('./pull --ambientTemperature')
-  console.log('./pull --humidity --gyroscope --ambientTemperature')
+  console.log('./pull')
+  //console.log('./pull --ambientTemperature')
+  //console.log('./pull --humidity --gyroscope --ambientTemperature')
   process.exit(1)
 }
 
+program.allSensors = true
 
 var USE_READ = true;
 
